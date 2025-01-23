@@ -29,7 +29,4 @@ Interactive interface for the QA bot from Part 1, allowing users to upload PDF d
 - Pinecone API Key
 
 ### Steps
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-repo/financial-data-qa
-   cd financial-data-qa
+ Clone this repository:  
