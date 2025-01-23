@@ -16,6 +16,13 @@ import os
 # 1. Initialize OpenAI and Pinecone
 ###############################################################################
 """
+
+Due to the limitations of the free account in Pinecone,
+storing embeddings for multiple pages of a PDF can result in increased processing time and potential memory issues.
+To optimize performance, we have currently limited the process to a single page of the PDF for generating results.
+However, you are free to use as many pages as needed, keeping in mind that it may require additional processing time.
+
+
 kindly paste your own api keys
 """
 

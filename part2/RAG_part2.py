@@ -12,17 +12,22 @@ from pinecone import Pinecone, ServerlessSpec
 ###############################################################################
 
 """
-kindly paste your own api keys
 
+Due to the limitations of the free account in Pinecone,
+storing embeddings for multiple pages of a PDF can result in increased processing time and potential memory issues.
+To optimize performance, we have currently limited the process to a single page of the PDF for generating results.
+However, you are free to use as many pages as needed, keeping in mind that it may require additional processing time.
+
+
+kindly paste your own api keys
 """
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "your api key"  # Replace with your OpenAI API key
 
-# Load the Pinecone API key from an environment variable
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
-
-# Initialize Pinecone with the API key
-pc = Pinecone(api_key=pinecone_api_key)
+# Replace "your_pinecone_api_key" with your Pinecone API key.
+pc = Pinecone(
+    api_key="your api key",
+)
 
 ###############################################################################
 # 2. Helper Functions (from your existing pipeline)
