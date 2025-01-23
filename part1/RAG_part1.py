@@ -19,13 +19,12 @@ import os
 kindly paste your own api keys
 """
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = "your api key"  # Replace with your OpenAI API key
 
-# Load the Pinecone API key from an environment variable
-pinecone_api_key = os.getenv("PINECONE_API_KEY")
-
-# Initialize Pinecone with the API key
-pc = Pinecone(api_key=pinecone_api_key)
+# Replace "your_pinecone_api_key" with your Pinecone API key.
+pc = Pinecone(
+    api_key="your api key",
+)
 
 ###############################################################################
 # 2. Extract P&L Tables from Multiple Pages using Camelot
